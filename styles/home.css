@@ -1,17 +1,18 @@
 body {
-    max-width: 48rem;
+    max-width: 56rem;
     margin: 0 auto;
     width: 100%;
+    margin-bottom: 10rem;
 }
 header {
     background-color: rgba(5, 63, 114, 0.895);
-    padding: 1rem;
+    padding: 1rem 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-li {
+nav li {
     list-style: none;
 }
 
@@ -27,6 +28,7 @@ li.show {
     content: '≡';
     color: aliceblue;
     font-size: 2rem;
+    margin-right: 1rem;
 }
 
 #menu.show::before {
@@ -36,8 +38,19 @@ li.show {
     display: flex;
 }
 
+nav ul {
+    padding-inline-start: 0 !important;
+}
+
+.navigation {
+    padding: 1rem;
+    margin: 0.5rem 0 0 0 !important;
+    width: fit-content;
+}
 nav {
     width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .navigation {
@@ -48,16 +61,18 @@ nav {
 }
 
 .navigation li {
-    padding: 0.3rem 0;
+    padding: 0;
 }
 
 nav a {
     color: aliceblue;
     font-family: 'Sour Gummy', sans-serif;
+    text-decoration: none;
 }
 
 nav a:hover {
     color: yellow;
+    padding: 0;
 }
 
 .navigation.show {
@@ -79,17 +94,20 @@ nav a:hover {
     flex-basis: 1;
 }
 
-.flex {
+.upper-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1rem;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    background-color: rgba(5, 63, 114, 0.895);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3rem;
+    text-align: center;
+    background-color: rgba(5, 63, 114);
     color: white;
 }
 
@@ -102,7 +120,7 @@ footer {
 .highlight {
     border: 1px solid black;
     border-radius: 5px;
-    
+    margin-bottom: 2rem;
 }
 
 .highlight h2 {
@@ -122,8 +140,11 @@ footer {
 }
 
 .modules div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     background-color:brown;
-    height: 2rem;
     color: white;
     border-radius: 5px;
 }
@@ -144,4 +165,17 @@ footer {
     padding: 0.5rem 3rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.featured-item {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.list {
+    font-size: 1.3rem;
+}
+
+.list li {
+    margin: 0.5rem 0;
 }
