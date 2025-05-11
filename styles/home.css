@@ -29,6 +29,7 @@ li.show {
     color: aliceblue;
     font-size: 2rem;
     margin-right: 1rem;
+    font-family: 'Sour Gummy', sans-serif;
 }
 
 #menu.show::before {
@@ -36,6 +37,7 @@ li.show {
     color: aliceblue;
     font-size: 2rem;
     display: flex;
+    font-family: 'Sour Gummy', sans-serif;
 }
 
 nav ul {
@@ -91,7 +93,6 @@ nav a:hover {
 }
 .hdr {
     display: flex;
-    flex-basis: 1;
 }
 
 .upper-header {
@@ -113,7 +114,7 @@ footer {
 
 .container {
     display: grid;
-    height: 100vh;
+    height: fit-content;
     gap: 10px;
 }
 
