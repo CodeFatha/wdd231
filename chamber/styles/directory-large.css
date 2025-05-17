@@ -57,9 +57,14 @@
     .brand.show {
         display: block;
     }
+    
     .hdr {
         width: initial;
         padding: 0.5rem;
         background-color: black;
+    }
+
+    .active {
+        color: rgb(124, 243, 103);
     }
 }
