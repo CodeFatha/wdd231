@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Digital Circle",
+        "address": "243 Rand Street, Cape Town, 8000",
+        "phone": "012 345 6789",
+        "image":"../chamber/images/digital_circle.jpg",
+        "membership": "Gold",
+        "websiteUrl": "https://digitalcircle.co.za",
+        "email": "cruz@digitalcircle.co.za"
+    },
+    {
+        "id": 2,
+        "name": "Tech Innovators",
+        "address": "456 Tech Avenue, Johannesburg, 2000",
+        "phone": "098 765 4321",
+        "image":"../chamber/images/tech_innovators.jpg",
+        "membership": "Silver",
+        "websiteUrl": "https://techinnovators.co.za",
+        "email": "tich@techinnovators.co.za"
+    },
+    {
+        "id": 3,
+        "name": "Creative Minds",
+        "address": "789 Creative Lane, Durban, 4000",
+        "phone": "023 456 7890",
+        "image":"../chamber/images/creative_minds.jpg",
+        "membership": "Bronze",
+        "website-Url": "https://creativeminds.co.za",
+        "email": "mami@creativeminds.co.za"
+    },  
+    {
+        "id": 4,
+        "name": "Innovate Africa",
+        "address": "101 Innovation Road, Pretoria, 0001",
+        "phone": "021 654 0987",
+        "image":"../chamber/images/innovate_africa.jpg",
+        "membership": "Gold",
+        "websiteUrl": "https://innovateafrica.co.za",
+        "email": "admin@innovateafrica.co.za"
+    },
+    {
+        "id": 5,
+        "name": "Future Tech",
+        "address": "202 Future Street, Cape Town, 8001",
+        "phone": "056 789 0123",
+        "image":"../chamber/images/future_tech.jpg",
+        "membership": "Silver",
+        "websiteUrl": "https://futuretech.co.za",
+        "email": "info@futuretech.co.za"
+    },      
+    {
+        "id": 6,
+        "name": "NextGen Solutions",
+        "address": "303 NextGen Boulevard, Johannesburg, 2001",
+        "phone": "054 321 0987",
+        "image":"../chamber/images/next_gen.jpg",
+        "membership": "Bronze",
+        "websiteUrl": "https://nextgensolutions.co.za",
+        "email": "info@futuretech.co.za"
+    },  
+    {
+        "id": 7,
+        "name": "Tech Pioneers",
+        "address": "404 Pioneer Way, Durban, 4001",
+        "phone": "089 012 3456",
+        "image":"../chamber/images/tech_pioneers.jpg",
+        "membership": "Gold",
+        "websiteUrl": "https://techpioneers.co.za",
+        "email": "malvin@techpioneers.co.za"
+    }
+]
