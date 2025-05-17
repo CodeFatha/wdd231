@@ -188,8 +188,13 @@ footer {
     cursor: pointer;
 }
 
+.buttons button i {
+    margin-right: 3px;
+}
+
 .buttons button.selected {
     background-color: lightslategrey;
+    color: aliceblue;
 }
 .ignore {
     display: none;
