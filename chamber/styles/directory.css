@@ -24,6 +24,10 @@ li.show {
     display: block;
 }
 
+.hdr a {    
+    text-decoration: none;
+}
+
 #menu::before {
     content: '≡';
     color: aliceblue;
@@ -193,7 +197,7 @@ footer {
 }
 
 .buttons button.selected {
-    background-color: lightslategrey;
+    background-color: rgb(11, 5, 29);
     color: aliceblue;
 }
 .ignore {
