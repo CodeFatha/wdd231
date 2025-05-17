@@ -191,3 +191,6 @@ footer {
 .buttons button.selected {
     background-color: lightslategrey;
 }
+.ignore {
+    display: none;
+}
