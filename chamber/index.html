@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A directory page for the Chamber of Commerce.">
+    <meta name="description" content="Home page for the Chamber of Commerce.">
     <meta name="author" content="Bhekimpilo Ncube">
     <meta property="og:title" content="Directory Page" >
     <meta property="og:description" content="Shows a list of local businesses and other organizations that belong to the Chamber of Commerce" >
     <meta property="og:image" content="https://codefatha.github.io/wdd231/chamber/images/favy.png" >
     <meta property="og:url" content="https://codefatha.github.io/wdd231/chamber/directory.html" >
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="icon" href="../chamber/images/fav.png" type="image/x-icon">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>    
-    <script src="scripts/businesses.js" defer></script>
+    <script src="scripts/menu.js" defer></script>    
+    <script src="scripts/spotlights.js" defer></script>    
+    <script src="scripts/weatherAPI.js" defer></script>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap" rel="stylesheet">
-    <title>Chamber of Commerce Directory Page</title>
+    <title>Chamber of Commerce Home Page</title>
 </head>
 <body>
     <header>
@@ -27,33 +30,35 @@
                 <h1 class="brand">
                     Chamber of Commerce
                 </h1>
+                <button>Join Chamber</button>
             </div>
             <div class="hdr">
                 <nav>
                     <ul class="navigation">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="#" class="nav-link active">Chamber</a></li>
-                        <li><a href="#" class="nav-link">Final</a></li>
-                        <li><a href="#" class="nav-link">GitHub Profile</a></li>
-                        <li><a href="#" class="nav-link">LinkedIn</a></li>
+                        <li><a href="index.html" class="nav-link home">Home</a></li>
+                        <li><a href="#" class="nav-link chamber active">Chamber</a></li>
+                        <li><a href="#" class="nav-link final">Final</a></li>
+                        <li><a href="#" class="nav-link github">GitHub Profile</a></li>
+                        <li><a href="#" class="nav-link linkedin">LinkedIn</a></li>
                     </ul>
                 </nav>
                 <a id="menu" href="#"></a>
             </div>
     </header>
     <main>
-        <h1 class="ignore">Chamber of Commerce Directory Page</h1>
-        <section class="section">
-            <div class="top-section">
-                <h2 class="heading">Directory</h2>
-                <div class="buttons">
-                    <button class="grid-btn"><i class="fas fa-th-large"></i>Grid</button>
-                    <button class="list-btn"><i class="fas fa-list"></i>List</button>
-                </div>
+        <h2>Spotlights</h2>
+        <div class="content">
+            <div class="forecast">
+                <h3>Weather Forecast </h3>
+                <p>☁️ <span class="temp"></span> Temperature</p>
+                <p>🥵 <span class="feel"></span> Feels like</p>
+                <p>💨 <span class="wind"></span> Windspeed</p>
+                <p>♨️ <span class="humidity"></span> Humidity</p>
+                <p>↔️ <span class="pressure"></span> Pressure</p>
             </div>
-            <div class="container"></div>
-            <div class="list-container"></div>
-        </section>
+            <div class="cards">
+            </div>
+        </div>
     </main>
     <footer>
         <p>Bheki Ncube | WDD231 | <span class="year"></span></p>
