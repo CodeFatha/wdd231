@@ -27,9 +27,11 @@ async function pickSpotlights() {
             image.height = '180';
             address.innerHTML = `${business.address}`;
             phone.innerHTML = `${business.phone}`;
+            phone.style.marginBottom = '5px';
             web.innerHTML = `${business.websiteUrl}`;
             web.href = business.websiteUrl;
             web.target = '_blank';
+            web.style.marginBottom = '10px';
             card.appendChild(image);
             card.appendChild(address);
             card.appendChild(phone);

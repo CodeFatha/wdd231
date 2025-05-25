@@ -20,7 +20,6 @@
     <script src="scripts/spotlights.js" defer></script>    
     <script src="scripts/weatherAPI.js" defer></script>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap" rel="stylesheet">
     <title>Chamber of Commerce Home Page</title>
 </head>
@@ -49,13 +48,20 @@
         <h2>Spotlights</h2>
         <div class="content">
             <div class="forecast">
-                <h3>Weather Forecast </h3>
-                <p>☁️ <span class="temp"></span> Temperature</p>
-                <p>🥵 <span class="feel"></span> Feels like</p>
-                <p>💨 <span class="wind"></span> Windspeed</p>
-                <p>♨️ <span class="humidity"></span> Humidity</p>
-                <p>↔️ <span class="pressure"></span> Pressure</p>
+                <div class="flex center">
+                    <h3>Weather Today </h3>
+                    <span class="icon">☁️</span> 
+                </div>
+                    
+                <p><span class="icon">🌡️</span> <span class="temp"></span> - Temperature</p>
+                <p><span class="icon">🥵</span> <span class="feel"></span> - Feels like </p>
+                <p><span class="icon">💨</span> <span class="wind"></span> - Windspeed</p>
+                <p><span class="icon">♨️</span> <span class="humidity"></span> -  Humidity</p>
+                <p><span class="icon">↔️</span> <span class="pressure"></span> - Pressure</p>
+                <h3 class="cast">Forecast</h3>
+                <div class="daily"></div>
             </div>
+            <h2 class="prov">Spotlights</h2>
             <div class="cards">
             </div>
         </div>

@@ -137,7 +137,7 @@ footer {
     height: fit-content;
     padding: 0.5rem 1rem;
     font-weight: bold;
-    background-color: green;
+    background-color: rgb(6, 49, 6);
     color: aliceblue;
     border-radius: 5px;
     border: 2px solid white;
@@ -185,10 +185,45 @@ main h2 {
     margin-bottom: 0;
 }
 
-.forecast p span {
+.forecast p span:nth-child(2) {
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .forecast p {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.address {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast-data {
+    margin-top: 5px;
+}
+
+.forecast-heading {
+    margin: 0;
+}
+
+.cast {
+    margin-top: 3rem;
+}
+
+main h2:first-child {
+    display: none;
 }
