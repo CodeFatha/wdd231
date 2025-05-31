@@ -227,3 +227,7 @@ main h2 {
 main h2:first-child {
     display: none;
 }
+
+main h1 {
+    text-align: center;
+}
