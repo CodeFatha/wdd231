@@ -10,16 +10,18 @@
     <meta property="og:image" content="https://codefatha.github.io/wdd231/chamber/images/favy.png" >
     <meta property="og:url" content="https://codefatha.github.io/wdd231/chamber/directory.html" >
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="icon" href="../chamber/images/fav.png" type="image/x-icon">
+    <script src="scripts/join-form.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>    
     <script src="scripts/menu.js" defer></script>    
-    <script src="scripts/spotlights.js" defer></script>    
-    <script src="scripts/weatherAPI.js" defer></script>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap" rel="stylesheet">
     <title>Chamber of Commerce Home Page</title>
 </head>
@@ -29,7 +31,7 @@
                 <h1 class="brand">
                     Chamber of Commerce
                 </h1>
-                <button>Join Chamber</button>
+                <button onclick="window.location.href='form.html'">Join Chamber</button>
             </div>
             <div class="hdr">
                 <nav>
@@ -37,18 +39,69 @@
                         <li><a href="index.html" class="nav-link home">Home</a></li>
                         <li><a href="#" class="nav-link chamber active">Chamber</a></li>
                         <li><a href="#" class="nav-link final">Final</a></li>
-                        <li><a href="#" class="nav-link github">GitHub Profile</a></li>
+                        <li><a href="#" class="nav-link github">GitHub</a></li>
                         <li><a href="#" class="nav-link linkedin">LinkedIn</a></li>
                     </ul>
                 </nav>
-                <a id="menu" href="#"></a>
+                <a id="menu" href="#"><span class="sr-only">Go to settings</span></a>
             </div>
-    </header>
-    <main>
-        <h2>Join the Chamber of Commerce</h2>
-        <form action="thank-you.html">
-            
-        </form>
+        </header>
+        <main>
+        <div class="form-container">
+            <form id="join-chamber" action="thank-you.html">
+                <h2>Join the Chamber of Commerce</h2>
+                <div>
+                    <label>
+                        <span class="required">First Name</span>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="required">Last Name</span>
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Organisation Title</span>
+                        <input type="text" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" title="Only letters, spaces, and hyphens. Minimum 7 characters.">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="required">Email Address</span>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="required">Phone Number</span>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span class="required">Business Name</span>
+                        <input type="text" name="business-name" id="business-name" autocomplete="organization" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Business description</span>
+                        <textarea></textarea>
+                    </label>
+                </div>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit" id="join">Start Membership</button>
+            </form>        
+        </div>
+       <div class="members">
+            <label>
+                <span>Membership Levels</span>
+                <span class="memberships"></span>
+            </label>
+        </div>
     </main>
     <footer>
         <p>Bheki Ncube | WDD231 | <span class="year"></span></p>

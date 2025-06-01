@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page for the Chamber of Commerce.">
     <meta name="author" content="Bhekimpilo Ncube">
-    <meta property="og:title" content="Home Page" >
+    <meta property="og:title" content="Directory Page" >
     <meta property="og:description" content="Shows a list of local businesses and other organizations that belong to the Chamber of Commerce" >
     <meta property="og:image" content="https://codefatha.github.io/wdd231/chamber/images/favy.png" >
     <meta property="og:url" content="https://codefatha.github.io/wdd231/chamber/directory.html" >
+    <link rel="icon" href="../chamber/images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
     <link rel="stylesheet" href="styles/directory-large.css">
-    <link rel="icon" href="../chamber/images/fav.png" type="image/x-icon">
+    <script src="scripts/thank-you.js" defer></script>    
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>    
     <script src="scripts/menu.js" defer></script>    
-    <script src="scripts/spotlights.js" defer></script>    
-    <script src="scripts/weather-api.js" defer></script>    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap" rel="stylesheet">
-    <title>Chamber of Commerce Home Page</title>
+    <title>Thank you</title>
 </head>
 <body>
     <header>
@@ -29,7 +26,7 @@
                 <h1 class="brand">
                     Chamber of Commerce
                 </h1>
-                <button onclick="window.location.href='form.html'">Join Chamber</button>
+                <button>Join Chamber</button>
             </div>
             <div class="hdr">
                 <nav>
@@ -45,27 +42,9 @@
             </div>
     </header>
     <main>
-        <h1>Chamber of Commerce</h1>
-        <h2>Spotlights</h2>
-        <div class="content">
-            <div class="forecast">
-                <div class="flex center">
-                    <h3>Weather Today </h3>
-                    <span class="icon">☁️</span> 
-                </div>
-                    
-                <p><span class="icon">🌡️</span> <span class="temp"></span> - Temperature</p>
-                <p><span class="icon">🥵</span> <span class="feel"></span> - Feels like </p>
-                <p><span class="icon">💨</span> <span class="wind"></span> - Windspeed</p>
-                <p><span class="icon">♨️</span> <span class="humidity"></span> -  Humidity</p>
-                <p><span class="icon">↔️</span> <span class="pressure"></span> - Pressure</p>
-                <h3 class="cast">Forecast</h3>
-                <div class="daily"></div>
-            </div>
-            <h2 class="prov">Spotlights</h2>
-            <div class="cards">
-            </div>
-        </div>
+        <h1>Hi <span class="applicant"></span>!</h1>
+        <h2>Thank you, your application to join the Chamber of Commerce has been received.</h2>
+        <div class="details"></div>
     </main>
     <footer>
         <p>Bheki Ncube | WDD231 | <span class="year"></span></p>

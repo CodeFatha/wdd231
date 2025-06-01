@@ -74,11 +74,11 @@ nav a {
     color: aliceblue;
     font-family: 'Sour Gummy', sans-serif;
     text-decoration: none;
+    padding: 1rem;
 }
 
 nav a:hover {
     color: yellow;
-    padding: 0;
 }
 
 .navigation.show {
@@ -230,4 +230,23 @@ main h2:first-child {
 
 main h1 {
     text-align: center;
+}
+
+.details {
+    margin: 2rem;
+}
+
+.data-set {
+    font-size: 1.3rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
