@@ -63,6 +63,10 @@ button:hover {
     text-align: center;
 }
 
+.heading2 {
+    margin: 1rem;
+}
+
 .fly-in {
     opacity: 0;
     transform: translateY(100%);
@@ -80,3 +84,8 @@ button:hover {
     opacity: 1;
   }
   }
+
+.heading2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
