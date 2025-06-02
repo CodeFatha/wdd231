@@ -7,6 +7,12 @@ const credits = document.querySelector('.credits');
 
 const courses = [
     {
+        'name': 'CSE210',
+        'description': 'Semi-advanced Programming',
+        'credits': 3,
+        'completed': false
+    },
+    {
         'name': 'CSE110',
         'description': 'Introduction to Computer Science',
         'credits': 2,       
@@ -16,12 +22,6 @@ const courses = [
         'name': 'CSE111',
         'description': 'intermediate Programming',
         'credits': 2,
-        'completed': true
-    },
-    {
-        'name': 'CSE210',
-        'description': 'Semi-advanced Programming',
-        'credits': 3,
         'completed': false
     },
     {
@@ -54,6 +54,7 @@ function displayCourses(list) {
 
         if ( course.completed ) {
           div.appendChild(check);  
+          div.style.backgroundColor = 'darkgreen';
         }
         div.appendChild(p);
         div.style.textAlign = 'center';
