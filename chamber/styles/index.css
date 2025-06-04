@@ -120,6 +120,7 @@ nav a:hover {
 footer {
     position: fixed;
     bottom: 0;
+    top: auto;
     width: 100%;
     max-width: 56rem;
     margin: 0 auto;
