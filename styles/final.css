@@ -1,0 +1,54 @@
+.navigation {
+    justify-content: space-around !important;
+}
+
+.hdr {
+    width: 100% !important;
+    max-width: 54rem;
+    position: absolute;
+    top: 0;
+    margin-bottom: 4rem;
+}
+
+header {
+    padding: 4rem 0;
+}
+
+footer {
+    width: 100%;
+    max-width: 54rem;
+    padding: 1rem;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+
+aside {
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: end;
+}   
+
+.cards {
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.feat {
+    text-align: center;
+}
+
+grid h2, h3 {
+    color: #a52a2a;
+}
