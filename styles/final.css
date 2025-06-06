@@ -52,3 +52,20 @@ aside {
 grid h2, h3 {
     color: #a52a2a;
 }
+
+.wireframes {
+    display: flex;
+    gap: 2rem;
+}
+
+.frame-head {
+    display: block !important;
+    width: 100%;
+    max-width: 54rem;
+}
+
+.block {
+    width: 100%;
+    max-width: 54rem;
+    margin: 0 auto;
+}
