@@ -14,8 +14,19 @@
     .prov {
         display: none;
     }
+    #menu {
+        display: none;
+    }
 
     main h2:first-child {
         display: flex;
     }
+
+    footer {
+        width: 100%;
+        max-width: 60vw;
+        color: aliceblue;
+        text-align: center;
+    }
+    
 }

@@ -6,5 +6,6 @@ footer {
     margin-top: 1rem;
     position: sticky;
     bottom: 0;
+    max-width: 72rem;
     width: 100%;
 }

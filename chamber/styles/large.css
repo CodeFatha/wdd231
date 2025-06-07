@@ -1,0 +1,23 @@
+@media screen and (min-width: 56rem) {
+   .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 1rem;
+    width: 100%;
+    max-width: 69rem;
+   }
+
+   .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: black;
+    max-width: 71rem;
+   }
+
+   header {
+    display: block;
+   }
+}

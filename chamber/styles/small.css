@@ -1,0 +1,58 @@
+.cards div {
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "photo"
+        "address"
+        "description"
+        ;
+}
+
+.cards div h3 {
+    grid-area: name;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.cards div img {
+    grid-area: photo;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.cards div p:first-child {
+    grid-area: address;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.cards div p:last-child {
+    grid-area: description;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:  minmax(250px, 1fr);
+    max-width: 282px;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.ribbon {
+    height: 1.2rem;
+    background-color: yellow;
+    color: rgb(41, 38, 38);
+    text-align: center;
+    width: fit-content;
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+}
+
+body {
+    margin-bottom: 12rem;
+}
