@@ -16,7 +16,7 @@ async function loadPlaces() {
             desc.classList.add('address');
             image.src = `images/${place.photo}`;
             image.alt = `${place.name}`; 
-            image.width = '240';
+            image.width = '260';
             image.height = '180';
             image.loading = 'lazy';
             address.innerHTML = `${place.address}`;

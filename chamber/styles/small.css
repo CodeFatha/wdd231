@@ -56,3 +56,8 @@ footer {
 body {
     margin-bottom: 12rem;
 }
+
+main h2:first-child {
+    display: block;
+    margin: 1rem 1.5rem;
+}
