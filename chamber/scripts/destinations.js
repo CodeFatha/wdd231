@@ -18,6 +18,7 @@ async function loadPlaces() {
             image.alt = `${place.name}`; 
             image.width = '240';
             image.height = '180';
+            image.loading = 'lazy';
             address.innerHTML = `${place.address}`;
             name.innerHTML = `${place.name}`;
             name.style.marginBottom = '5px';
