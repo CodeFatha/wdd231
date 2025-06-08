@@ -1,7 +1,9 @@
 import {places} from '../data/places.mjs';
 const container = document.querySelector('.cards');
+const chamber = document.querySelector('.chamber');
 
 loadPlaces();
+chamber.classList.add('active');
 
 async function loadPlaces() {
     

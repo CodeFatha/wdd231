@@ -21,6 +21,11 @@
         display: none;
     }
 
+    .card img {
+        border-radius: 8px 0 0 8px;
+        margin-right: 1rem !important;
+    }
+
     .card img:hover {
         animation: pulse 0.5s ease-in-out 0s 1;
     }

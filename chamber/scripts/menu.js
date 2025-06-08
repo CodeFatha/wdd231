@@ -3,39 +3,36 @@ const githubLink = document.querySelector('.github');
 const finalLink = document.querySelector('.final');
 const linkedin = document.querySelector('.linkedin');
 const chamber = document.querySelector('.chamber');
+const links = document.querySelectorAll('.nav-link');
+const currentUrl = window.location.href;
 
 homeLink.addEventListener('click', () => {
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
     homeLink.classList.add('active');
-    githubLink.classList.remove('active');
-    finalLink.classList.remove('active');
-    chamber.classList.remove('active');
-    linkedin.classList.remove('active');
 });
 githubLink.addEventListener('click', () => {
-    githubLink.classList.add('active');
-    homeLink.classList.remove('active');
-    finalLink.classList.remove('active');
-    chamber.classList.remove('active');
-    linkedin.classList.remove('active');
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+    githubLink.classList.add('active');   
 });
 finalLink.addEventListener('click', () => {
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
     finalLink.classList.add('active');
-    homeLink.classList.remove('active');
-    githubLink.classList.remove('active');
-    chamber.classList.remove('active');
-    linkedin.classList.remove('active');
 });
 chamber.addEventListener('click', () => {
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
     chamber.classList.add('active');
-    homeLink.classList.remove('active');
-    githubLink.classList.remove('active');
-    finalLink.classList.remove('active');
-    linkedin.classList.remove('active');
 });
 linkedin.addEventListener('click', () => {
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
     linkedin.classList.add('active');
-    chamber.classList.remove('active');
-    homeLink.classList.remove('active');
-    githubLink.classList.remove('active');
-    finalLink.classList.remove('active');
 });

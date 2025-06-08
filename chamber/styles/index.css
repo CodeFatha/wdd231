@@ -128,6 +128,8 @@ footer {
     text-align: center;
     background-color: rgba(5, 63, 114, 0.895);
     color: white;
+    width: 100%;
+    max-width: 72rem;
 }
 
 .active {
