@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "category": "housing",
+    "username": "jdoe92",
+    "title": "2-Bed to share",
+    "description": "Spacious 2-bedroom unit near downtown with parking and balcony.",
+    "address": "Chicago, IL",
+    "condition": "Good",
+    "phone": "312-555-0198",
+    "image": "house.webp"
+  },
+  {
+    "id": 2,
+    "category": "cars",
+    "username": "carfan88",
+    "title": "2012 Honda Civic",
+    "description": "Well-maintained, single owner, new tires and brakes.",
+    "address": "Los Angeles, CA",
+    "condition": "Used",
+    "phone": "213-555-0344",
+    "image": "car.webp"
+  },
+  {
+    "id": 3,
+    "category": "furniture",
+    "username": "homedecor4u",
+    "title": "Modern Leather Sofa",
+    "description": "3-seater, genuine leather, smoke-free home.",
+    "address": "Denver, CO",
+    "condition": "Very Good",
+    "phone": "720-555-0678",
+    "image": "furniture.webp"
+  },
+  {
+    "id": 4,
+    "category": "cars",
+    "username": "mspeedster",
+    "title": "2005 Toyota Corolla",
+    "description": "Reliable daily driver, 160k miles, some cosmetic wear.",
+    "address": "Phoenix, AZ",
+    "condition": "Fair",
+    "phone": "602-555-0299",
+    "image": "car.webp"
+  },
+  
+  {
+    "id": 5,
+    "category": "appliances",
+    "username": "fixitfast",
+    "title": "Samsung Dryer",
+    "description": "Front-load washer and dryer set, 3 years old, working perfectly.",
+    "address": "Miami, FL",
+    "condition": "Very Good",
+    "phone": "305-555-0844",
+    "image": "dryer.webp"
+  }
+]

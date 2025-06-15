@@ -1,0 +1,25 @@
+@media screen and (min-width: 24rem) 
+{
+    .show {
+        display: none;
+    }
+    .navigation.show {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu::before {
+        content: '';
+    }
+    
+    .brand {
+        display: block;
+        color: aliceblue;
+    }
+    
+    .brand.show {
+        display: block;
+    }
+}

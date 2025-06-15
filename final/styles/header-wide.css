@@ -1,0 +1,40 @@
+@media screen and (min-width: 24rem) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 !important;
+    }
+
+    #menu::before {
+        content: '' !important;
+    }
+    
+    .brand {
+        display: block;
+        color: aliceblue;
+    }
+    
+    .brand.show {
+        display: block;
+    }
+
+    .hdr {        
+        display: flex !important;
+        background-color: black;
+    }
+    .upper-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .upper-header.show {
+        display: block;
+    }
+
+    .navigation.show {
+        flex-direction: row
+    }
+}

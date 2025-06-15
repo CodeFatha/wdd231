@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="posted page of the Bulletin Board website."> 
+    <meta name="author" content="Bhekimpilo Ncube">
+    <meta property="og:title" content="Bulletin board post page" >
+    <meta property="og:description" content="Post something to the bulletin board" >
+    <meta property="og:image" content="https://codefatha.github.io/wdd231/final/images/fav.png" >
+    <meta property="og:url" content="https://codefatha.github.io/wdd231/final/post.html" >
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-wide.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/post.css">
+    <link rel="icon" href="images/fav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/create-post.js" defer></script>
+    <title>Post | Bulletin</title>
+</head>
+<body>
+    <div class="custom-header"></div>
+    <main>
+  <div class="form-container">
+    <h2>Post an Item</h2>
+    <form action="index.html" id="myForm">
+      <label>
+        Username
+        <input type="text" id="username" name="username" required>
+      </label>
+
+      <label >
+        Phone Number
+        <input type="tel" id="phone" name="phone" required>
+      </label>
+
+      <label>
+        Post Title
+        <input type="text" id="title" name="title" required>
+      </label>
+
+      <label>
+        Description
+        <textarea id="description" name="description" rows="4" required></textarea>
+      </label>
+
+      <label>
+        Address
+        <input type="text" id="address" name="address" required>
+      </label>
+
+      <label>
+        Category
+        <select id="category" name="category" required>
+            <option value="">--Select--</option>
+            <option value="car">Car</option>
+            <option value="furniture">Furniture</option>
+            <option value="appliance">Appliance</option>
+            <option value="housing">Housing</option>
+        </select>
+      </label>
+
+      <label>
+        Condition
+        <select id="condition" name="condition" required>
+            <option value="">--Select--</option>
+            <option value="new">New</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="used">Used</option>
+            <option value="damaged">Damaged</option>
+        </select>
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    </main>
+    <div class="custom-footer"></div>
+</body>
+</html>

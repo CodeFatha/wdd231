@@ -1,0 +1,19 @@
+footer {
+    padding: 0.4rem 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 0;
+    max-width: var(--max-width);
+    width: 100%;
+    position: fixed;
+    background-image: url('../images/banner-footer.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p:first-child {
+    font-weight: bold !important;
+}
