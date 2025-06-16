@@ -1,4 +1,4 @@
-[
+export const posts = [
   {
     "id": 1,
     "category": "housing",

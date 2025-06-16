@@ -1,17 +1,20 @@
+import {posts} from '../data/posts.mjs'
 const stickers = document.querySelector('.stickers');
 const localPosts = localStorage.getItem('posts');
-let card  = null;
-let jsonPosts = null;
 
 loadPosts();
 
 async function loadPosts() {
     if (!localPosts) {
-        await seedPosts();
-        localStorage.setItem('posts', JSON.stringify(jsonPosts));
+        try {            
+            const postData = await posts;
+            localStorage.setItem('posts', JSON.stringify(postData));
+        } catch (error) {
+            console.log(error);
+        }
     }
-    const data = localPosts ? JSON.parse(localPosts) : jsonPosts;
-    data.reverse();
+    const data = localPosts ? JSON.parse(localPosts) : posts;
+    data.reverse(); // So newly created posts show at the top
     data.forEach(element => {
         const sticker = document.createElement('div');
         const title = document.createElement('h2');
@@ -25,6 +28,7 @@ async function loadPosts() {
 
         title.innerHTML = element.title;
         image.src = `../final/images/${element.image}`;
+        image.loading = 'lazy';
         desc.innerHTML = element.description;
         username.innerHTML = `Posted by ${element.username}`;
         sticker.id = element.id;
@@ -57,14 +61,5 @@ async function loadPosts() {
         });
         stickers.appendChild(sticker);
     });
-}
-
-async function seedPosts() {
-    const jsonData = await fetch('../final/data/posts.json');
-    if (!jsonData.ok) {
-        throw console.error('Data could not be retrieved');        
-    }
-    const data = await jsonData.json();
-    jsonPosts = data;
 }
 
